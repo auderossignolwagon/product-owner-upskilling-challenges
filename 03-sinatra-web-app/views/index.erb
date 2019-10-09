@@ -8,7 +8,16 @@
     <%= stylesheet '/style.css' %>
   </head>
   <body>
-    <h1>Activities</h1>
-    <p>TODO: display all the activities</p>
+    <h2>Activities</h2>
+    <% @activities.each do |activity|%>
+    <div class = card-white>
+      <p><%= activity["Name"] %> <%= activity["Category"].upcase %></p>
+      <p>Located in <%= activity["City"] %></p>
+      <p>Duration of <%= activity["Duration"] %> minutes</p>
+      <p>For <%= activity["Number of participants"] %> personnes</p>
+      <p>Charge of <%= activity["Price"] %> € </p>
+    </div>
+    <% end %>
+
   </body>
 </html>

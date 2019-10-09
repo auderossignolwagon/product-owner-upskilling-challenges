@@ -1,1 +1,16 @@
-/* Add any styling you want */
+
+h2{
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	color: #2f416d;
+}
+
+.card-white{
+	background-color: white;
+	border-radius: 5px;
+	box-shadow: 0 5px 5px rgba(0,0,0,.1);
+	width: 700px; /* set the width of your container */
+    margin: 40px auto; /* set margins: top/bottom: 40px; left/right: automatic */
+    padding: 40px;  
+}

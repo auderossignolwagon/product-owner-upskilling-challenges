@@ -8,16 +8,25 @@
     <%= stylesheet '/style.css' %>
   </head>
   <body>
-    <h2>Activities</h2>
+  <div class="banner">
+    <h1>Vivez l'experience teambuilding !<h1>
+    <img src="\images\sports.png">
+  </div>
+  <h2>Activités</h2>
     <% @activities.each do |activity|%>
-    <div class = card-white>
-      <p><%= activity["Name"] %> <%= activity["Category"].upcase %></p>
-      <p>Located in <%= activity["City"] %></p>
-      <p>Duration of <%= activity["Duration"] %> minutes</p>
-      <p>For <%= activity["Number of participants"] %> personnes</p>
-      <p>Charge of <%= activity["Price"] %> € </p>
+    <div class="card-white">
+     <div>
+        <p><%= activity["Name"] %> <%= activity["Category"].upcase %></p>
+        <p>I will display &#128524;</p>
+        <p>Located in <%= activity["City"] %></p>
+        <p>Duration of <%= activity["Duration"] %> minutes</p>
+        <p>For <%= activity["Number of participants"] %> personnes</p>
+        <p>Charge of <%= activity["Price"] %> € </p>
+      </div>
+      <p><img height=200px src=<%= activity["Photo_url"] %>></p>
     </div>
     <% end %>
 
+    <%# <div class="bla" style="background-image: url(xxxxxx)"></div> %>
   </body>
 </html>

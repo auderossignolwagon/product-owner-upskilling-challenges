@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400|Noto+Sans:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Karla|Montserrat:300,400|Noto+Sans:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Carter+One|Karla|Montserrat:300,400|Noto+Sans:400,700&display=swap');
+
+
+.label{
+    background-color: #ff7e67;
+    text-align: center;
+    vertical-align: center;
+}
+
+h2{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	color: #2f416d;
+	width: 700px; /* set the width of your container */
+    margin: 40px auto; /* set margins: top/bottom: 40px; left/right: automatic */
+	padding: 20px;
+}
+
+h1{
+	margin-top: 0px;
+	padding-top: 20px;
+	color: aliceblue;
+	font-family:'Carter One', cursive;
+}
+
+h3{
+    font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+}
+
+p{
+	color:3c4245;
+}
+
+body{
+	font-family: 'Karla', sans-serif;
+	margin: 0px;
+}
+
+.banner {
+	/* 1. Set a background image */
+	   background-color: #347474;
+	/* 2. Make the background image cover the banner div */
+	  background-size: cover;     
+	/* 3. Center the image */
+	  background-position: center;
+	  height: 250px;
+	  text-align: center;
+	  vertical-align: center;
+  }
+
+.card-white{
+	justify-content: space-between;
+	background-color:white;
+	border-radius: 5px;
+	box-shadow: 0 5px 5px rgba(0,0,0,.1);
+	width: 200px; /* set the width of your container */
+    margin: 20px; /* set margins: top/bottom: 40px; left/right: automatic */
+    padding: 20px;
+    display: inline-block;
+    align-content: center;
+}

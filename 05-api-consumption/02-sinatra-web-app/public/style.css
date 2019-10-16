@@ -1,1 +1,115 @@
-/* Add any styling you want */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400|Noto+Sans:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Karla|Montserrat:300,400|Noto+Sans:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Carter+One|Karla|Montserrat:300,400|Noto+Sans:400,700&display=swap');
+
+h2{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	color: #2f416d;
+	width: 700px; /* set the width of your container */
+    margin: 40px auto; /* set margins: top/bottom: 40px; left/right: automatic */
+	padding: 20px;
+}
+
+h1{
+	margin-top: 0px;
+	padding-top: 20px;
+	color: aliceblue;
+	font-family:'Carter One', cursive;
+}
+
+h3{
+    font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+}
+
+body{
+	font-family: 'Karla', sans-serif;
+	margin: 0px;
+}
+
+.city-choice{
+    display:flex;
+    text-align: center;
+    vertical-align: center;
+    width: 700px; /* set the width of your container */
+    margin: 40px auto; /* set margins: top/bottom: 40px; left/right: automatic */
+    padding: 0px;
+}
+
+.styledcity {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color:white;
+    border-radius: 5px;
+    background-color: #35495e;
+    margin: 5px;
+}
+
+.styledcity:hover {
+    background-color: #347474;
+}
+
+.styledcity:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+.card-white{
+	display:flex;
+	justify-content: space-between;
+	background-color:white;
+	border-radius: 5px;
+	box-shadow: 0 5px 5px rgba(0,0,0,.1);
+	width: 700px; /* set the width of your container */
+    margin: 40px auto; /* set margins: top/bottom: 40px; left/right: automatic */
+    padding: 20px;
+}
+
+.card-white a{
+    display: flex;
+    align-items: center;
+}
+
+.banner {
+	/* 1. Set a background image */
+	   background-color: #347474;
+	/* 2. Make the background image cover the banner div */
+	  background-size: cover;     
+	/* 3. Center the image */
+	  background-position: center;
+	  height: 250px;
+	  text-align: center;
+	  vertical-align: center;
+  }
+
+.styled {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color:white;
+    border-radius: 5px;
+    background-color: #347474;
+    margin: 5px;
+}
+
+.styled:hover {
+    background-color: #347474;
+}
+
+.styled:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+.label{
+    background-color: #ff7e67;
+    font-family: 'Montserrat', sans-serif;
+}
+

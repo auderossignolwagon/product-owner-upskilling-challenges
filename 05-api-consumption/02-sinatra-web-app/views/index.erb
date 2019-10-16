@@ -3,12 +3,41 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Team Building - Activities</title>
     <%= stylesheet '/style.css' %>
   </head>
+
   <body>
-    <h1>Activities</h1>
-    <p>TODO: display all the activities</p>
+  <div class="banner">
+    <h1>Ready for teambuilding ?</h1>
+    <img src="\images\sports.png">
+  </div>
+
+   <br><br><br>
+
+  <div class="city-choice">
+    <p><a href="/?location=Nantes" target=_blank><button class="favorite styledcity" type="button">🗺️ Nantes</button></a></p>
+    <p><a href="/?location=Paris" target=_blank><button class="favorite styledcity" type="button">🗺️ Paris</button></a></p>
+  </div>
+
+ <% @activities.each do |activity|%>
+    <div class="card-white">
+     <div>
+        <p><span class="label"><%= activity["category"].upcase %></span></p>
+        <p><h3><%= activity["name"] %> </h3></p>
+        <p>🗺️ <%= activity["city"] %></p>
+        <p>&#8986; <%= activity["duration"] %> minutes</p>
+        <p>🧮 <%= activity["participants_count"] %> persons</p>
+        <p>💰 <%= activity["price"] %> € </p>
+        <div>
+          <p><a href="/activities/<%= activity["id"] %>" target=_blank>
+            <button class="favorite styled" type="button">Details</button>         
+          </a></p>
+        </div>
+      </div>
+      <p><img height=200px src=<%= activity["photo_url"] %>></p>
+    </div>
+    </div>
+    <% end %>
   </body>
 </html>
